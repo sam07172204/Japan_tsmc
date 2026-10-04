@@ -8,3 +8,5 @@ Supabase 專用 `japan_tsmc_items` 表，與既有旅行資料分開。客戶端
 更新以 revision 比對防止同時修改蓋掉彼此內容。
 
 本機預覽：`python3 -m http.server 8080`。
+
+新版分類：餐廳（含酒吧）、景點（含購物標籤）、住宿。首次選姓名（Sam、家賢、沛霖、子穎），localStorage 記住，儲存時記錄 edited_by，資料庫觸發器更新 updated_at。姓名為自行選擇，不是驗證身分；未收集 IP。歷史資料無署名不推測。舊交通與其他資料 archived 隱藏，保留原資料。
